@@ -1,0 +1,22 @@
+{
+  "name": "marouakos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "marouakos",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "discord-buttons": "^4.0.0-deprecated",
+    "discord-giveaway": "^1.1.5",
+    "discord.js": "^12.3.5",
+    "express": "^4.17.3",
+    "fs": "0.0.1-security",
+    "minecraft-server-util": "^5.3.0",
+    "quick.db": "^7.1.3"
+  }
+}
