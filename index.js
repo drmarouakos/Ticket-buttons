@@ -14,8 +14,9 @@ client.on('ready', () => {
 })
 
 client.on('message', async (message) => {
-    if (message.member.permissions.has('ADMINISTRATOR')) {
+    if (message.author.bot) return;
         if (message.content === '!ticket') {
+            if (message.member.permissions.has('ADMINISTRATOR')) {
             message.delete()
             const embed = new Discord.MessageEmbed()
             .setAuthor('ticket system', 'https://media.discordapp.net/attachments/977498267518652447/1000087672980779028/ticket.png')
@@ -31,7 +32,6 @@ client.on('message', async (message) => {
             .setEmoji('\📨')
             const btns = [button]
             message.channel.send({embed: embed, buttons: btns})
-        }
     }
 })
 
